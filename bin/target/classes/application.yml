@@ -1,0 +1,24 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 500MB
+      max-request-size: 500MB
+
+#AWS properties
+cloud:
+  aws:
+    region:
+      static: ap-south-1
+    stack:
+      auto: false
+
+bucket:
+  name: dev-assets-davidarchanjo
+
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error          

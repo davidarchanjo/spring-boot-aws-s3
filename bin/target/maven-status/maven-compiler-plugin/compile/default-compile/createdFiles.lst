@@ -1,0 +1,5 @@
+br\com\example\davidarchanjo\config\AwsS3ClientConfig.class
+br\com\example\davidarchanjo\controller\S3BucketStorageController.class
+br\com\example\davidarchanjo\application\SpringBootAwsS3Application.class
+br\com\example\davidarchanjo\model\FileMediaType.class
+br\com\example\davidarchanjo\service\S3BucketStorageService.class

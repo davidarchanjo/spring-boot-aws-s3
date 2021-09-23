@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "30ea5d40-f91c-4fe8-87ea-e40b7da5339d",
+		"name": "springboot-aws-s3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listFiles",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/s3bucketstorage/<YOUR-BUCKET-NAME>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"s3bucketstorage",
+						"<YOUR-BUCKET-NAME>"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "uploadFile",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fileName",
+							"value": "sample.jpg",
+							"contentType": "",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/images/sample.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/s3bucketstorage/<YOUR-BUCKET-NAME>/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"s3bucketstorage",
+						"<YOUR-BUCKET-NAME>",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "downloadFile",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/s3bucketstorage/<YOUR-BUCKET-NAME>/download/sample.jpg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"s3bucketstorage",
+						"<YOUR-BUCKET-NAME>",
+						"download",
+						"sample.jpg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteFile",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/s3bucketstorage/<YOUR-BUCKET-NAME>/sample.jpg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"s3bucketstorage",
+						"<YOUR-BUCKET-NAME>",
+						"sample.jpg"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

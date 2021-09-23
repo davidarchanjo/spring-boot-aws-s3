@@ -1,0 +1,5 @@
+C:\Users\Administrador\IdeaProjects\spring-cloud-aws-s3\src\main\java\br\com\example\davidarchanjo\controller\S3BucketStorageController.java
+C:\Users\Administrador\IdeaProjects\spring-cloud-aws-s3\src\main\java\br\com\example\davidarchanjo\model\FileMediaType.java
+C:\Users\Administrador\IdeaProjects\spring-cloud-aws-s3\src\main\java\br\com\example\davidarchanjo\config\AwsS3ClientConfig.java
+C:\Users\Administrador\IdeaProjects\spring-cloud-aws-s3\src\main\java\br\com\example\davidarchanjo\application\SpringBootAwsS3Application.java
+C:\Users\Administrador\IdeaProjects\spring-cloud-aws-s3\src\main\java\br\com\example\davidarchanjo\service\S3BucketStorageService.java
