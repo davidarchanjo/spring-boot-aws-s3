@@ -17,11 +17,11 @@ Amazon S3 is one of the most popular services from [Amazon Web Services](https:/
 The structure of this sample project is organized by following the MVC (a.k.a. **M**odel **V**iew **C**ontroller) Pattern. You can find more details about this pattern [here](https://examples.javacodegeeks.com/spring-mvc-architecture-overview-example/).
 
 The following are the base folders (packages) in which the project is organized and the purpose of each:
-- [📁 application](./src/main/java/br/com/darchanjo/examples/application): contains the main class, annotated with `@SpringBootApplication`, which is responsible for booting up the application
-- [📁 config](./src/main/java/br/com/darchanjo/examples/config): contains configuration class, annotated with `@Configuration`, which is responsible for defining the S3 client bean that will be used to perform operations on the bucket
-- [📁 controller](./src/main/java/br/com/darchanjo/examples/controller): contains class, annotated with `@Controller`, which is responsible for processing REST requests for access and manipulation of the bucket and its contents
-- [📁 enumeration](./src/main/java/br/com/darchanjo/examples/enumeration): contains enum definition for mapping file media type based on known file extensions
-- [📁 service](./src/main/java/br/com/darchanjo/examples/service): contains service class, annotated with `@Service`, where all the logic to operate on the bucket is effectively implemented
+- [📁 application](./src/main/java/br/com/example/davidarchanjo/application): contains the main class, annotated with `@SpringBootApplication`, which is responsible for booting up the application
+- [📁 config](./src/main/java/br/com/example/davidarchanjo/config): contains configuration class, annotated with `@Configuration`, which is responsible for defining the S3 client bean that will be used to perform operations on the bucket
+- [📁 controller](./src/main/java/br/com/example/davidarchanjo/controller): contains class, annotated with `@Controller`, which is responsible for processing REST requests for access and manipulation of the bucket and its contents
+- [📁 enumeration](./src/main/java/br/com/example/davidarchanjo/enumeration): contains enum definition for mapping file media type based on known file extensions
+- [📁 service](./src/main/java/br/com/example/davidarchanjo/service): contains service class, annotated with `@Service`, where all the logic to operate on the bucket is effectively implemented
 
 
 ## 4. Libraries and Dependencies
