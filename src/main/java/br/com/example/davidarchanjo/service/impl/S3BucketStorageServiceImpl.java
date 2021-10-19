@@ -47,7 +47,6 @@ public class S3BucketStorageServiceImpl implements S3BucketStorageService {
         final String bucketName,
         final String keyName
     ) throws IOException, AmazonClientException {
-        // S3Object s3Object = s3Client.getObject(new GetObjectRequest(bucketName, keyName));
         S3Object s3Object = s3Client.getObject(bucketName, keyName);
         InputStream inputStream = s3Object.getObjectContent();
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
